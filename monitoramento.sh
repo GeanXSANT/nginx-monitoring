@@ -14,7 +14,7 @@
 	conexoes=$(printf '%s\n' "$status" | awk 'NR==1 {print $3}')
 	requisicoes=$(printf '%s/n' "$status"  | awk 'NR==3 {print $3}')
 	# Calculo de requisicoes por segundo
-	ARQUIVO="/home/gean/nginx_anterio.txt"
+	ARQUIVO="$HOME/nginx_anterior.txt"
 	agora=$(date +%s)
 	rps=0
 
